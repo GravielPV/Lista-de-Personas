@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de personas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body onload="mostrar()">
+
+    
+
+    <div class="contenedor" id="cabecero">
+
+        <h1>Listado de personas</h1>
+
+        <div id="personas">
+            
+            <ul>
+                <!-- <li>Juan Perez</li> -->
+            </ul>
+        </div>
+
+    </div>
+    <div class="contenedor">
+        <form id="forma">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+        </form>
+        <button onclick="agregar()">+</button>
+        <button onclick="exportarAExcel()" class="Boton-Guardar">💾 </button>
+    </div>
+
+    
+</body>
+<script src="persona.js"></script>
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</html>
